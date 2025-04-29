@@ -7,5 +7,9 @@
  */
 
 p{
-    color: blueviolet;
+    color: red;
+}
+
+body{
+    background-color:blue;
 }
