@@ -1,0 +1,6 @@
+ @layer base {
+        a {
+          color: inherit !important;
+          text-decoration: none;
+        }
+      }

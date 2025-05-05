@@ -1,0 +1,24 @@
+/*置頂廣告*/
+.topbar-announcement {
+    @apply bg-[#1a1a1a] text-white text-sm text-center py-2 px-4;
+  }
+  
+  .topbar-announcement a {
+    @apply underline hover:text-yellow-300 ml-1;
+  }
+  
+  .topbar-announcement span {
+    @apply text-yellow-400 font-medium;
+  }
+  
+  .p-button {
+    @apply inline-flex items-center justify-center;
+    @apply text-white text-sm font-normal;
+    @apply bg-[#E0301F] w-[104px] h-[35px] rounded-[10px];
+  }
+
+  .p-menu {
+    @apply inline-flex items-center justify-center;
+    @apply text-[#2A2B32] text-sm font-normal;
+    @apply w-[80px] h-[38px];
+  }
