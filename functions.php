@@ -18,11 +18,12 @@ add_action( 'wp_enqueue_scripts', function() {
         null
     );
 
-    // 再載子主題自己的 main.css
+    // 再載子主題自己的 tailwind CSS
     wp_enqueue_style(
-        'esim-child-style',
-        get_stylesheet_directory_uri() . '/assets/css/main.css',
-        ['blocksy-styles', 'google-fonts-noto-sans-tc'], // 指定依賴父主題跟 Google Fonts
-        filemtime( get_stylesheet_directory() . '/assets/css/main.css' ) // 防止快取
-    );
+        'tailwind-output',
+        get_stylesheet_directory_uri() . '/src/output.css',
+        [],
+        filemtime(get_stylesheet_directory() . '/src/output.css') // 自動版本控制
+      );
+      
 });

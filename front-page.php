@@ -31,7 +31,9 @@ if ( !empty($home_title) ) {
     }
     ?>
   </section>
-
+  <h1 class="bg-red-500">
+    Hello world!
+  </h1>
 </main>
 
 <?php get_footer(); ?>
