@@ -34,6 +34,9 @@ if ( !empty($home_title) ) {
   <h1 class="bg-red-500">
     Hello world!
   </h1>
+  <h1 class="bg-red-500">
+    Hello world!
+  </h1>
 </main>
 
 <?php get_footer(); ?>
