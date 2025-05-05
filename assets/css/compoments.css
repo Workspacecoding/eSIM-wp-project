@@ -223,6 +223,11 @@
     background: none;
     border: none;
     cursor: pointer;
+  
+    /* 定位在右上角 */
+    position: absolute;
+    top: 1rem;
+    right: 3.5rem;
   }
   
   /* ✅ RWD */

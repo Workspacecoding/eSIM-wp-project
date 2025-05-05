@@ -45,7 +45,7 @@
   <!-- ✅ 手機版選單 -->
   <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-header">
-      <span class="logo">eSIM</span>
+
       <button class="close-btn" id="menuClose">&times;</button>
     </div>
     <div class="mobile-menu-body">

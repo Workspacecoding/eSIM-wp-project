@@ -23,5 +23,5 @@ if ( !empty($home_title) ) {
 </main>
 </body>
 
-<script src="http://esim-website.local/wp-content/themes/eSIM/assets/js/2.js"></script>
+<script src="http://esim-website.local/wp-content/themes/eSIM/assets/js/menu.js"></script>
 <?php get_footer(); ?>
