@@ -1,0 +1,237 @@
+.banner {
+    background-color: #1f1f28;
+    color: white;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 1rem; /* 16px */
+    padding: 0.875rem 1.25rem; /* 14px 20px */
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  .banner b {
+    font-weight: bold;
+  }
+  
+  .banner a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 0.25rem; /* 4px */
+  }
+  
+  .banner a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ✅ iPad Pro, Tablet (橫向) ~1024px */
+  @media (max-width: 1024px) {
+    .banner {
+      font-size: 0.9375rem; /* 15px */
+      padding: 0.875rem 1.125rem; /* 14px 18px */
+    }
+  }
+  
+  /* ✅ iPad, 小型平板 (直向) ~768px */
+  @media (max-width: 768px) {
+    .banner {
+      font-size: 0.875rem; /* 14px */
+      padding: 0.875rem 1rem; /* 14px 16px */
+    }
+  }
+  
+ 
+  /* 強制讓按鈕與文字換行（可放在最上面） */
+.banner a {
+    display: inline-block;
+  }
+  
+  /* ✅ 639px 以下：改成 block 並隱藏箭頭 */
+  @media (max-width: 639px) {
+    .banner {
+      font-size: 0.875rem; /* 14px */
+      padding: 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .banner a {
+      display: block;
+      width: 90%;
+      margin-top: 0.75rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid white;
+      border-radius: 3.125rem;
+      background-color: transparent;
+      color: white;
+      font-size: 0.875rem;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+  
+    .banner a:hover {
+      background-color: white;
+      color: #1f1f28;
+    }
+  
+    /* ✅ 只有手機才隱藏箭頭 */
+    .banner .arrow {
+      display: none;
+    }
+  }
+  
+  
+  
+  /* ✅ 小手機 (如 iPhone SE、舊 Android) ~480px */
+  @media (max-width: 480px) {
+    .banner {
+      font-size: 0.8125rem; /* 13px */
+      padding: 1rem 0.75rem; /* 16px 12px */
+    }
+  
+    .banner a {
+      display: block;
+      margin-top: 0.5rem; /* 8px */
+      margin-left: 0;
+    }
+  }
+  
+  /* ✅ 超小裝置 (極小螢幕) ~360px */
+  @media (max-width: 360px) {
+    .banner {
+      font-size: 0.78125rem; /* 12.5px */
+      padding: 1rem 0.625rem; /* 16px 10px */
+    }
+  }
+  
+  /*MenuCSS*/
+  .site-header {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 3rem;
+    position: relative;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: #3366ff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-desktop a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+  }
+  
+  .btn-desktop {
+    background-color: #E0301F;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .nav-desktop > a.btn-desktop {
+    color: white;
+  }
+  .btn-mobile {
+    background-color: #E0301F;
+    color:white;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .mobile-menu-body > a.btn-mobile {
+    color: white;
+  }
+  
+  .btn-mobile.full-width {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+
+
+  .icon-link::before {
+    content: '\1F464'; /* 人頭圖示 */
+    margin-right: 0.4rem;
+  }
+  
+  .icon-link:last-child::before {
+    content: '\1F6D2'; /* 購物車圖示 */
+  }
+  
+  /* ✅ 漢堡按鈕 */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+  }
+  
+  /* ✅ 手機版選單 */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1rem 3rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+  }
+  
+  .mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .mobile-menu-body a {
+    display: block;
+    padding: 0.75rem 0;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+  }
+  
+  .close-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* ✅ RWD */
+  @media (max-width: 890px) {
+    .nav-desktop {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  }

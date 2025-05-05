@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <main class="site-main">
 
 <?php
@@ -20,18 +19,9 @@ if ( !empty($home_title) ) {
     <!-- 這裡是你自己之後要加的區塊 -->
   </section>
 
-  <section class="elementor-main-content">
-    <?php
-    $elementor_page_id = 9; // Elementor做的那一頁 ID
-    $post = get_post( $elementor_page_id );
-    if ( $post ) {
-        echo apply_filters( 'the_content', $post->post_content );
-    } else {
-        echo '<p>找不到頁面內容</p>';
-    }
-    ?>
-  </section>
 
 </main>
+</body>
 
+<script src="http://esim-website.local/wp-content/themes/eSIM/assets/js/2.js"></script>
 <?php get_footer(); ?>
